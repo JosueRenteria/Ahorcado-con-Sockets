@@ -10,6 +10,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
 
     #Va a enviar un String en binarioo (b = binario y lo convierte).
+    print
     s.sendall(b"Hola Mundo")
 
     #El cliente resivira lo que le envia el servidor.
